@@ -10,7 +10,7 @@
   curl_setopt($ch, CURLOPT_URL, $str);
   curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, true );
   $output = curl_exec($ch);
-  var_dump( $output );
+  echo $output;
  ?>
  <?php phpinfo(); ?>
  </body>
