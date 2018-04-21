@@ -8,12 +8,12 @@
   $ch = curl_init();
   $str ='http://peter-spring-mesher-demo';
   curl_setopt($ch, CURLOPT_URL, $str);
-  curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, true );
-  curl_setopt($ch,CURLOPT_HTTPGET,true);
+  curl_setopt($ch, CURLOPT_HEADER, 1);  
+  curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+  #curl_setopt($ch,CURLOPT_HTTPGET,true);
   $output = curl_exec($ch);
-  $response = json_decode($output);
-  echo $output;
-  echo $response;
+  curl_close($ch);  
+  print_r($output);
  ?>
  <?php phpinfo(); ?>
  </body>
