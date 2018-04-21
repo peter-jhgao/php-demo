@@ -11,6 +11,7 @@
   curl_setopt($ch, CURLOPT_URL, $str);
   curl_setopt($ch, CURLOPT_HEADER, 1);  
   curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt ($ch, CURLOPT_PROXY,'127.0.0.1:30101');
   #curl_setopt($ch,CURLOPT_HTTPGET,true);
   $output = curl_exec($ch);
   curl_close($ch);  
