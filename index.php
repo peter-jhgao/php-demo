@@ -6,7 +6,7 @@
  <?php echo '<h2>Hello PHP</h2>'; ?>
  <?php
   $ch = curl_init();
-  $str ='http://www.baidu.com';
+  $str ='http://117.78.50.133:32123/';
   curl_setopt($ch, CURLOPT_URL, $str);
   curl_setopt($ch, CURLOPT_HEADER, 1);  
   curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
