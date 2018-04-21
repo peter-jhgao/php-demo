@@ -15,6 +15,6 @@
   curl_close($ch);  
   print_r($output);
  ?>
- <?php phpinfo(); ?>
+ <?#php phpinfo(); ?>
  </body>
 </html>
