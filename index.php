@@ -9,8 +9,10 @@
   $str ='http://peter-spring-mesher-demo';
   curl_setopt($ch, CURLOPT_URL, $str);
   curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, true );
+  curl_setopt($ch,CURLOPT_HTTPGET,true);
   $output = curl_exec($ch);
   $response = json_decode($output);
+  echo $output;
   echo $response;
  ?>
  <?php phpinfo(); ?>
